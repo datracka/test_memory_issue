@@ -7,12 +7,12 @@ class GoodWorker
         before = GC.stat(:total_freed_objects)
 
         100_000.times do
-            foo = "a string"
+            foo = Article.new
         end
 
         GC.start
         after = GC.stat(:total_freed_objects)
-        puts 'created 10k strings array'
+        puts 'created 10k Article'
         puts "Objects Freed: #{after - before}"
     end
 end

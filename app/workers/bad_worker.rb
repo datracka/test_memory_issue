@@ -9,12 +9,12 @@ class BadWorker
 
         retained= []
         100_000.times do
-            retained << "a string"
+            retained << Article.new
         end
 
         GC.start
         after = GC.stat(:total_freed_objects)
-        puts 'created 10k strings array'
+        puts 'created 10k Articles'
         puts "Objects Freed: #{after - before}"
     end
 end
