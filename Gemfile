@@ -62,3 +62,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "pg", "~> 1.1"
 
 gem "sidekiq", "~> 5.2"
+
+gem "foreman", "~> 0.64.0"
