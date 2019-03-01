@@ -1,0 +1,2 @@
+module BadHelper
+end
